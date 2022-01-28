@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: #ffffffd5;
+  --blue: #6200ee;
+  --lg-blue: #d0dae7;
+  --lg-gray: #f1f6f9e6;
+}
+
+html {
+  font-size: 100%;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
+  line-height: 1.3;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+/*-----------------------------------------------------------------------------*/
+.card {
+  margin: 1.5rem;
+  width: 340px;
+  background-color: var(--bg-color);
+  border-radius: 2%;
+}
+.card__body {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.card__body:hover {
+  background-color: var(--lg-gray);
+}
+.card__header {
+  display: flex;
+}
+.card__image {
+  background-image: url(image/ele3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.card__image--basic {
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+}
+.card__heading {
+  padding: 0.8rem 0.8rem;
+}
+.card__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.card__subtitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.card__header--basic {
+  flex-direction: column;
+}
+.card__image--basic {
+  width: 100%;
+  flex-basis: 15rem; /*since main axis is y axis here flex-basis will be height here*/
+}
+.card__footer {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  padding: 0 0.3rem;
+}
+.card__icons {
+  margin-left: auto;
+}
+
+.card__button {
+  padding: 0.5rem;
+  background-color: transparent;
+  color: var(--blue);
+  border: 1px solid transparent;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.card__button:hover {
+  background-color: var(--lg-blue);
+  border: 1px solid var(--lg-blue);
+  border-radius: 5%;
+}
+.card__content {
+  padding: 0.6rem 0.8rem;
+}
+.card__icon {
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: var(--blue);
+  border: 1px solid transparent;
+  margin: 0.1rem;
+  font-weight: 300;
+  width: 2.3rem;
+  height: 2.5rem;
+  display: inline-block;
+}
+.card__icon:hover {
+  background-color: var(--lg-blue);
+  border: 1px solid var(--lg-blue);
+  border-radius: 55%;
+}
+/**Basic text over media**/
+
+.card__header--text-alignment {
+  flex-direction: column;
+  position: relative;
+}
+.card__image--text-alignment {
+  width: 100%;
+  flex-basis: 15rem; /*since main axis is y axis here flex-basis will be height here*/
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+}
+.card__heading--text-alignment {
+  position: absolute;
+  left: 0;
+  bottom: 5%;
+}
+.card__heading--text-alignment h2,
+.card__heading--text-alignment h3 {
+  color: white;
+}
+
+/* Basic with header */
+.card__header--with-header {
+  flex-direction: column-reverse;
+}
+.card__image--with-header {
+  width: 100%;
+  flex-basis: 15rem; /*since main axis is y axis here flex-basis will be height here*/
+}
+
+/** Card without icons */
+.card__icons--hide {
+  display: none;
+}
+/** Card without button */
+.card__btns--hide {
+  display: none;
+}
+/*Horizontal image text*/
+.card__header--horizontal {
+  flex-direction: row;
+}
+.card__img--horizontal {
+  flex-basis: 50%; /*since main axis is x axis here flex-basis will be width here*/
+  height: 10rem;
+}
+.card__content--horizontal {
+  display: none;
+}
