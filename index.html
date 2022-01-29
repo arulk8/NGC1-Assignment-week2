@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chips</title>
-    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -16,7 +16,28 @@
   </head>
   <body>
     <div class="container">
-      <div class="drawer"></div>
+      <div class="drawer">
+        <div class="drawer__title">
+          <h3 class="title">Title</h3>
+          <h4 class="sub-title">SubText</h4>
+        </div>
+        <a href="#" class="drawer__item" tabindex="1">
+          <i class="fas fa-inbox"></i>
+          <span>Inbox</span>
+        </a>
+        <a href="#" class="drawer__item" tabindex="1">
+          <i class="fas fa-star"></i>
+          <span>Star</span>
+        </a>
+        <a href="#" class="drawer__item" tabindex="1">
+          <i class="fas fa-paper-plane"></i>
+          <span>Sent Mail</span>
+        </a>
+        <a href="#" class="drawer__item" tabindex="1">
+          <i class="fas fa-envelope-open"></i>
+          <span>Drafts</span>
+        </a>
+      </div>
     </div>
   </body>
   <script defer src="./app.js"></script>
