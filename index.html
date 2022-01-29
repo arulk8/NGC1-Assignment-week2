@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Badge</title>
+  </head>
+  <body class="container">
+    <div class="badge badge--sm">
+      <span class="text"> Text with a badge </span>
+      <span class="count count--sm">4</span>
+    </div>
+
+    <div class="badge badge--lg">
+      <span class="text"> Text with a badge </span>
+      <span class="count count--lg">4</span>
+    </div>
+
+    <div class="badge badge__btn--lg">
+      <button class="button">Action</button>
+      <span class="count count--lg">4</span>
+    </div>
+
+    <div class="badge badge__btn--lg">
+      <span class="count count__btn-rev--lg">4</span>
+      <button class="button">Action</button>
+    </div>
+
+    <div class="badge badge__btn--lg">
+      <i class="text fas fa-home"></i>
+      <span class="count count__icon--sm">4</span>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
