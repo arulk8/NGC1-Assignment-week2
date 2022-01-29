@@ -12,8 +12,27 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Badge</title>
+    <title>Snackbar</title>
   </head>
-  <body class="container"></body>
+  <body class="container">
+    <div class="snackbar snackbar-top">
+      <span class="text"> Can't send photo. Retry in 5 seconds. </span>
+      <div class="actions">
+        <button class="snackbar__btn snackbar__action">RETRY</button>
+        <button class="snackbar__btn snackbar__btn--close">
+          <span class="fas fa-times"></span>
+        </button>
+      </div>
+    </div>
+    <div class="snackbar snackbar-bottom">
+      <span class="text"> Can't send photo. Retry in 5 seconds. </span>
+      <div class="actions">
+        <button class="snackbar__btn snackbar__action">RETRY</button>
+        <button class="snackbar__btn snackbar__btn--close">
+          <span class="fas fa-times"></span>
+        </button>
+      </div>
+    </div>
+  </body>
   <script src="./app.js"></script>
 </html>
