@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Badge</title>
+  </head>
+  <body class="container">
+    <div class="button-container">
+      <button id="alert1">Alert - Side by side</button>
+      <button id="alert2">Alert - Stacked</button>
+      <button id="simple">Simple</button>
+      <button id="confirmation1">Confirmation - Side by side</button>
+      <button id="confirmation2">Confirmation - Stacked</button>
+    </div>
+    <div class="backdrop">
+      <div id="alert-modal" class="dialog dialog--alert">
+        <header class="dialog__header">
+          <h3>Dialog header</h3>
+        </header>
+        <section class="dialog__body">
+          <p class="dialog__text">Dialog Body text</p>
+        </section>
+        <footer class="dialog__footer dialog__sbs">
+          <button class="btn dialog__btn">ACTION 1</button>
+          <button class="btn dialog__btn">ACTION 2</button>
+        </footer>
+      </div>
+    </div>
+  </body>
+  <script async src="./app.js"></script>
+</html>
